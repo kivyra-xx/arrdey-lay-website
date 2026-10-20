@@ -75,5 +75,38 @@ navLinks.querySelectorAll("a").forEach((link) => {
     navLinks.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
     menuToggle.textContent = "☰";
+
+    if (link.hash === "#booking") {
+      bookingPinned = true;
+      setBookingOpen(true);
+    }
   });
 });
+
+const bookingDisclosure = document.getElementById("booking");
+const bookingSummary = bookingDisclosure.querySelector("summary");
+let bookingPinned = false;
+
+const setBookingOpen = (isOpen) => {
+  bookingDisclosure.open = isOpen;
+  bookingSummary.setAttribute(
+    "aria-label",
+    `${isOpen ? "Hide" : "Show"} bookings and collaborations`,
+  );
+};
+
+bookingSummary.addEventListener("click", (event) => {
+  event.preventDefault();
+  bookingPinned = !bookingPinned;
+  setBookingOpen(bookingPinned);
+});
+
+if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+  bookingDisclosure.addEventListener("mouseenter", () => {
+    if (!bookingPinned) setBookingOpen(true);
+  });
+
+  bookingDisclosure.addEventListener("mouseleave", () => {
+    if (!bookingPinned) setBookingOpen(false);
+  });
+}
