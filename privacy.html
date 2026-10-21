@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | ARRDEY LAY</title>
+  <meta name="description" content="Learn what information the ARRDEY LAY website collects and how it is used.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html#home" class="logo"><span>ARRDEY</span> <span class="logo-accent">LAY.</span></a>
+
+    <button class="menu-toggle" id="menu-toggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#music">Music</a>
+      <a href="https://youtube.com/@arrdeylay" target="_blank"
+        rel="noopener noreferrer">Videos</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#booking">Booking</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="social-icons top-socials">
+      <a href="https://www.instagram.com/arrdeylay"
+        aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.tiktok.com/@arrdeylay" aria-label="TikTok"
+        target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+      </a>
+      <a href="https://youtube.com/@arrdeylay"
+        aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+      </a>
+      <a href="https://spotify.com/" aria-label="Spotify">
+        <i class="fa-brands fa-spotify" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+  <main style="max-width: 900px; margin: 0 auto; padding: 48px 5%; color: #ccc;">
+    <p class="eyebrow">ARRDEY LAY</p>
+    <h1 style="margin: 12px 0 24px; color: #f5f5f5;">Privacy Policy</h1>
+
+    <p>This policy explains what information may be collected through the official ARRDEY LAY website and how it is used.</p>
+
+    <h2 style="margin: 28px 0 8px; color: #e7bc35;">Information we collect</h2>
+    <p>If you subscribe for updates, we collect the email address you provide. If you contact us by email or WhatsApp, we receive the contact details and the information you choose to include in your message.</p>
+
+    <h2 style="margin: 28px 0 8px; color: #e7bc35;">How information is used</h2>
+    <p>We use your email address to send release updates if you subscribe. We use the details in messages to read and reply to your inquiry. We do not sell your personal information to third parties.</p>
+
+    <h2 style="margin: 28px 0 8px; color: #e7bc35;">Third-party services</h2>
+    <p>This website uses the Font Awesome CDN for icons and a third-party form provider for subscriptions. Links and embedded features may also involve social platforms. These third-party services may process information under their own privacy policies, which we do not control.</p>
+
+    <h2 style="margin: 28px 0 8px; color: #e7bc35;">Your choices and policy updates</h2>
+    <p>To ask us to remove information you have provided, email <a href="mailto:jefferyabban2@gmail.com">jefferyabban2@gmail.com</a>. We may update this policy from time to time, and changes will be posted on this page.</p>
+
+    <p style="margin-top: 28px;">Last updated: October 21, 2026</p>
+    <p style="margin-top: 18px;"><a class="btn btn-outline" href="index.html">Back to home</a></p>
+  </main>
+
+  <footer>
+    <p>© 2026 ARRDEY LAY. ALL RIGHTS RESERVED.</p>
+    <div class="footer-links">
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <span class="footer-contact">
+        <span class="footer-contact-prompt">Get in touch — choose:</span>
+        <a href="mailto:jefferyabban2@gmail.com">Email</a>
+        <a href="https://wa.me/233545372329" target="_blank"
+          rel="noopener noreferrer">WhatsApp</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
+</body>
+</html>
